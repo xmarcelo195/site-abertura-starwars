@@ -60,7 +60,7 @@ body {
     /*! height: 1; */
     display: flex;
     align-items: center;
-    /*! justify-items: center; */
+    justify-content: center;
     animation: ani2 5s linear forwards;
 }
 
