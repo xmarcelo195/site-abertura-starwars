@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+    font-weight: 80em;
+    color: #ffe919
+}
+/* #ffe919; */
+body {
+    background-image: url(https://png-library.net/images/bsg-stars.png);
+    overflow: hidden;
+}
+
+#box {
+    position: absolute;
+    width: 18em;
+    height: 50em;
+    bottom: 0;
+    left: 50%;
+    margin-left:-9em;
+    font-size: 450%;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(300px) rotateX(25deg)
+
+}
+
+#box p {
+    text-align: justify;
+    margin: 0.8em 0;
+}
+
+#box p.titulo {
+    text-align: center;
+}
+
+#texto {
+    position:absolute;
+    top: 100%;
+    animation: 120s ani 5s linear infinite;
+}
+
+@keyframes ani {
+    from {
+        top:100%;
+    }
+    to {
+        top:-200%;
+    }
+}
+
+.image {
+    width: 100vw;
+    /*! height: 1; */
+    display: flex;
+    align-items: center;
+    /*! justify-items: center; */
+    animation: ani2 5s linear forwards;
+}
+
+@keyframes ani2 {
+    to {
+        transform: scale(0);
+    }
+}
+
